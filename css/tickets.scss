@@ -1,0 +1,46 @@
+#buttons {
+    list-style-type: none;
+    display: flex;
+    float: right;
+    gap: 1em;
+
+
+}
+
+
+#filters {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+
+    li {
+        flex: 1;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #363c4c;
+        display: block;
+        margin: 0.5rem 1rem 0 0;
+        text-decoration: none;
+        color: #363c4c;
+        border-radius: 8px;
+        transition: all 0.1s ease-out;
+        padding: 0.8rem 0.8rem;
+
+        a {
+
+            color: #363c4c;
+            text-decoration: none;
+        }
+    }
+
+    li:hover {
+        background-color: rgba(202, 207, 218, 0.2352941176);
+    }
+
+    li.active {
+        border-radius: 0;
+        border-bottom: #5449f0 2px solid;
+    }
+}

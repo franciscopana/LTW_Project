@@ -1,0 +1,16 @@
+name: Lint and check formatting
+on:
+  pull_request:
+    types:
+      - ready_for_review
+
+jobs:
+  linter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PHP Code Sniffer (php-actions)
+        uses: php-actions/phpcs@v1.0.0
+        with:
+          php_version: 8.1
+          standard: phpcs.xml
+

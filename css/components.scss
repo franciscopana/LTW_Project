@@ -1,0 +1,198 @@
+@import "theme.scss";
+
+$border-radius: 8px;
+$placeholder-color: #929292;
+
+button,
+input[type="button"],
+input[type="submit"],
+a.button {
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    display: block;
+    padding: 0.8rem;
+    text-decoration: none;
+    color: #363c4c;
+    border-radius: $border-radius;
+    background-color: rgba(111, 113, 119, 0.235);
+    border: none;
+    margin: 0;
+
+    &:hover {
+        background-color: rgba(111, 113, 119, 0.235);
+    }
+
+    &.primary {
+        background-color: $primary-color;
+        color: white;
+    }
+
+    &.primary:hover {
+        background-color: desaturate($primary-color, 15%);
+    }
+
+    &.white {
+        border: 1px solid rgb(215, 217, 250);
+        background-color: white;
+    }
+
+    &.white:hover {
+        background-color: rgb(243, 243, 243);
+    }
+
+    &.cancel {
+        background-color: $hover-color;
+        color: $black-color;
+    }
+
+    &.cancel:hover {
+        background-color: #989ba13c;
+    }
+
+    &.delete {
+        background-color: $delete-color;
+        color: white;
+    }
+
+
+    &.delete:hover {
+        background-color: #a70d02;
+    }
+
+}
+
+.cancel-button:hover {
+    background-color: #989ba13c;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+        border-color: $primary-color;
+    }
+}
+
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' fill='%23000000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.707 7.707a1 1 0 00-1.414-1.414L10 13.586 4.707 8.293a1 1 0 00-1.414 1.414l6 6a1 1 0 001.414 0l6-6z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: $border-radius;
+    font-size: 16px;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+        border-color: $primary-color;
+    }
+}
+
+
+input {
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: $border-radius;
+    background-color: transparent;
+    border: 1px solid rgb(215, 217, 250);
+    font-size: 1rem;
+    transition: 0.2s;
+    margin-bottom: 0.5rem;
+    margin-top: 0.1rem;
+
+    background-color: white;
+    box-shadow: 0 1px 0.2rem 5px 5px rgba(0, 0, 0, 0.2);
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+        border-color: $primary-color;
+    }
+
+    &.error {
+        border-color: #ec1557;
+    }
+
+    &.success {
+        border-color: #229542;
+    }
+
+    &::placeholder {
+        color: $placeholder-color;
+    }
+}
+
+textarea {
+    border: 1px solid #ebebeb;
+    border-radius: $border-radius;
+    padding: 1rem;
+    font-size: 16px;
+    resize: none;
+    height: 100px;
+    background-color: white;
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+        border-color: $primary-color;
+    }
+
+    &::placeholder {
+        color: $placeholder-color;
+    }
+}
+
+.snackbar {
+    padding: 0.8rem;
+    border-radius: $border-radius;
+    background-color: #f0ece8;
+    color: #5e5d5d;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    animation: slideIn 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    gap: 0.3rem;
+    cursor: pointer;
+
+    &.error {
+        background-color: #f9e1dc;
+        color: #da100a;
+    }
+
+    &.success {
+        background-color: #dff1d9;
+        color: #157f1f;
+    }
+
+    &.info {
+        background-color: #dee7ef;
+        color: #1152a0;
+    }
+
+    &.warning {
+        background-color: #f8ead8;
+        color: #c18034;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translatex(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+}

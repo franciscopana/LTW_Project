@@ -1,0 +1,94 @@
+.profile-container {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 3em;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    margin: 2rem;
+}
+
+img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+input {
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid rgb(215, 217, 250);
+    font-size: 1rem;
+    transition: 0.2s;
+    margin-bottom: 0.5rem;
+    margin-top: 0.1rem;
+    width: 100%;
+}
+
+#cancelButton {
+    width: 100px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+input[type=submit],
+#editButton {
+    background-color: #5449f0;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    width: min-content;
+    margin-top: 10px;
+}
+
+input[type=submit]:hover,
+#editButton:hover,
+#cancelButton:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+form {
+    margin: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container i {
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    transform: translateY(-40%);
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+.success {
+    color: green;
+    font-size: 0.8rem;
+    margin-top: 0.2rem;
+}

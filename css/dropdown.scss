@@ -1,0 +1,30 @@
+@import "theme.scss";
+
+.dropdown-content {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    border-radius: 8px;
+    margin: 0.5em 0em;
+    min-width: 160px;
+    right: 0;
+    padding: 0.5rem 0;
+
+    h3 {
+        padding: 0.5rem;
+    }
+}
+
+.dropdown-hover {
+    padding: 0.5em 0em;
+    position: relative;
+}
+
+.dropdown-hover:hover {
+    background-color: $hover-color;
+    border-radius: 8px;
+
+    .dropdown-content {
+        display: block;
+    }
+}

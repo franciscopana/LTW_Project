@@ -1,0 +1,60 @@
+@import "theme.scss";
+
+.label-status-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 1em;
+    padding: 1em 0em;
+}
+
+h2{
+    padding: 1em 0em;
+}
+
+.tag {
+    padding: 0.3rem 0.6rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    color: #535353;
+    width: fit-content;
+}
+
+.tag:hover{
+    filter: brightness(90%);
+}
+
+.status-list, .label-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1em;
+    align-items: center;
+    justify-content: start;
+    align-content: center;
+    background-color: $hover-color;
+}
+
+.make-new-modal{
+    .preview{
+        margin: 1rem 0rem;
+    }
+
+    .label-status-name{
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+        color: $black-secondary;
+        font-weight: bold;
+    }
+    .delete-button{
+        background-color: $delete-color;
+        color: white;
+    }
+    
+    .delete-button:hover{
+        background-color: #a70d02;
+    }
+}
+

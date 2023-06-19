@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #f0f1f9;
+}
+
+body {
+    background: linear-gradient(0, #f9faff, #f0f1f9);
+    font-family: 'Anuphan', 'Open Sans', sans-serif;
+    min-height: 100vh;
+}
+
+textarea,
+input,
+button,
+select,
+a {
+    font-family: 'Anuphan', 'Open Sans', sans-serif;
+}
+
+main {
+    padding: 2rem;
+    margin-left: 280px;
+}
+
+.v-h-center {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 950px) {
+    main {
+        margin-left: 0;
+    }
+}

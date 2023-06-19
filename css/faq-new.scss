@@ -1,0 +1,26 @@
+@import "theme.scss";
+
+
+hr {
+    border: none;
+    border-top: 1px solid $black-secondary;
+    margin: 1em 0em;
+    opacity: 0.5;
+}
+
+.create-faq {
+
+    textarea,
+    input[type="text"] {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    textarea {
+        padding: 0.5em;
+    }
+
+    input[type="submit"] {
+        border: 0;
+    }
+}

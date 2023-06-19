@@ -1,0 +1,141 @@
+@import "theme.scss";
+
+.faq-footer {
+    width: fit-content;
+    background-color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    font-size: 12px;
+    color: #4d4d4d;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+
+    p {
+        font-size: 1rem;
+    }
+
+    a {
+        margin-top: 0.5rem;
+    }
+}
+
+main div {
+    text-align: center;
+}
+
+.faq-question {
+    transition: all 0.5s ease-out;
+    padding: 1.2rem;
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+
+        .faq-buttons {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+            align-items: center;
+
+            i {
+                font-size: 1.6rem;
+                margin-right: 0.2rem;
+            }
+
+            .delete-button {
+                background-color: $delete-color;
+                color: white;
+            }
+
+            .delete-button:hover {
+                background-color: #a70d02;
+
+            }
+        }
+
+    }
+
+    .content {
+        margin-top: 0.7rem;
+        color: #2d2d2d;
+        opacity: 0;
+        transition: all 0.1s ease-out;
+        visibility: hidden;
+        height: 0;
+        text-align: left;
+        margin: 1rem 0rem 0rem 1rem;
+        overflow-wrap: break-word;
+        display: none;
+
+        .created-by {
+            margin-top: 1.2rem;
+            display: flex;
+            flex-direction: row;
+            gap: 0.5rem;
+            align-items: center;
+            justify-content: start;
+
+            img {
+                height: 2rem;
+                width: 2rem;
+                border-radius: 50%;
+            }
+
+            p:first-child {
+                font-weight: bold;
+                color: black;
+            }
+
+            .display-name {
+                color: $black-secondary;
+
+            }
+        }
+    }
+
+    &.active {
+        background-color: #ffffff;
+        border-radius: 8px;
+
+        .content {
+            opacity: 1;
+            visibility: visible;
+            height: auto;
+            display: block;
+        }
+
+
+    }
+}
+
+.top-content {
+    button {
+        margin: 1rem;
+        margin-left: auto;
+    }
+
+    .search {
+        >input {
+            margin-top: 1rem;
+            width: 20rem;
+        }
+    }
+}
+
+.faq-content {
+    margin: 2rem 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .top-content .search>input {
+        width: auto;
+    }
+}

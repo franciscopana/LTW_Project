@@ -1,0 +1,47 @@
+@import "theme.scss";
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        padding: 5rem;
+    }
+
+    .left {
+        background-color: #5449f0;
+
+        img {
+            width: 400px;
+        }
+    }
+
+    .right input[type="submit"] {
+        margin-top: 0.5rem;
+    }
+
+}
+
+a:link,
+a:visited {
+    color: $primary-color;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        grid-template-columns: 1fr;
+
+        div {
+            padding: 2rem;
+        }
+
+        .left {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,208 @@
+.tabSelector {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+}
+.tabSelector > li {
+  list-style-type: none;
+  flex: 1;
+  border-radius: 8px;
+}
+.tabSelector > li > a {
+  padding: 1rem 0rem;
+  text-decoration: none;
+  color: #363c4c;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  font-weight: 500;
+}
+.tabSelector > li.active {
+  background-color: #5449f0;
+}
+.tabSelector > li.active > a {
+  color: white;
+}
+.tabSelector > li:not(.active) {
+  background-color: rgba(202, 207, 218, 0.2352941176);
+}
+.tabSelector > li:hover:not(.active) {
+  background-color: rgba(152, 155, 161, 0.2352941176);
+}
+.tabSelector > hr {
+  color: rgba(65, 68, 73, 0.5137254902);
+}
+
+table th:first-child {
+  text-align: left;
+}
+table td {
+  text-align: center;
+}
+table td:first-child {
+  text-align: left;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 1em 0em;
+}
+.user-table th {
+  padding: 0.5rem 0rem;
+  border-bottom: 2px solid rgba(202, 207, 218, 0.2352941176);
+}
+.user-table .user-name > p:nth-child(1) {
+  color: #363c4c;
+}
+.user-table .user-name > p:nth-child(2) {
+  color: rgba(54, 60, 76, 0.7803921569);
+  font-size: 0.9rem;
+}
+.user-table .user-info {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  padding-left: 0;
+}
+.user-table .user-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user-table td {
+  padding: 0.5rem 1rem;
+}
+.user-table .icon {
+  font-size: 1.4em;
+  cursor: pointer;
+}
+.user-table .user-entry {
+  border-bottom: 2px solid rgba(202, 207, 218, 0.2352941176);
+}
+.user-table .role {
+  border-radius: 8px;
+  padding: 0.3rem 1rem;
+}
+.user-table .client {
+  background-color: #06ad00;
+}
+.user-table .agent {
+  background-color: #ad9c01;
+}
+.user-table .admin {
+  background-color: #c90101;
+}
+.user-table .role-filter {
+  background: linear-gradient(0, #f8f8f8, #f2f3f8);
+  max-width: 10em;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(202, 207, 218, 0.2352941176);
+}
+.user-table .role-filter > a {
+  display: block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: #363c4c;
+  font-weight: 500;
+}
+.user-table .role-filter > a:hover {
+  background-color: rgba(202, 207, 218, 0.2352941176);
+}
+
+.department-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-right: 1em;
+}
+
+.department-table {
+  border-collapse: collapse;
+  padding: 1em 0em;
+  width: 100%;
+}
+.department-table th {
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid rgba(202, 207, 218, 0.2352941176);
+}
+.department-table th:first-child {
+  text-align: left;
+}
+.department-table td > button {
+  margin: 0 auto;
+}
+.department-table td {
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+.department-table td:first-child {
+  text-align: left;
+}
+.department-table .icon {
+  font-size: 1.4em;
+  cursor: pointer;
+}
+.department-table .department-entry {
+  border-bottom: 2px solid rgba(202, 207, 218, 0.2352941176);
+}
+.department-table .department-entry .department-description {
+  max-width: 20em;
+  max-height: 5em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.department-table .department-entry .department-members {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  padding-left: 0;
+  justify-content: center;
+  position: relative;
+}
+.department-table .department-entry .department-members:hover ul {
+  display: flex;
+}
+.department-table .department-entry .department-members img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+.department-table .department-entry .department-members ul {
+  text-align: center;
+  position: absolute;
+  top: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem;
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 1;
+  list-style-type: none;
+}
+.department-table .department-entry .department-members ul li {
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.department-table .department-entry .department-members ul li div {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.department-table .department-entry .department-members ul li i {
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+i.delete {
+  color: #c01104;
+}
+
+.add-new-department-modal .modal-buttons {
+  margin-top: 1em;
+}/*# sourceMappingURL=admin.css.map */

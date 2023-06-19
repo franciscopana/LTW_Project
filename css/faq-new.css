@@ -1,0 +1,18 @@
+hr {
+  border: none;
+  border-top: 1px solid rgba(54, 60, 76, 0.7803921569);
+  margin: 1em 0em;
+  opacity: 0.5;
+}
+
+.create-faq textarea,
+.create-faq input[type=text] {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+.create-faq textarea {
+  padding: 0.5em;
+}
+.create-faq input[type=submit] {
+  border: 0;
+}/*# sourceMappingURL=faq-new.css.map */

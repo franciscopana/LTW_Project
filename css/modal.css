@@ -1,0 +1,119 @@
+.delete-user-modal > .modal-buttons > form > .delete-button {
+  padding: 0.7rem 1.3rem;
+  border-radius: 8px;
+  border: 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal h1 {
+  font-weight: 500;
+}
+.modal > .modal-content {
+  padding: 1.5rem;
+  background: linear-gradient(0, #f9faff, #f0f1f9);
+  border-radius: 8px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+.modal > .modal-content .modal-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 1em;
+  align-items: center;
+}
+
+.suggestions {
+  background: white;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  border-radius: 0 0 8px 8px;
+  margin-top: -14px;
+  z-index: 0;
+  padding-top: 1rem;
+  border: 1px solid rgb(215, 217, 250);
+  list-style-type: none;
+}
+.suggestions:not(.has-suggestions) {
+  display: none;
+}
+.suggestions li {
+  padding: 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+}
+.suggestions li img {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.suggestions li:hover {
+  background-color: #ebebeb;
+}
+
+.delete-user-modal {
+  gap: 2em;
+}
+.delete-user-modal > .modal-buttons > form > .delete-button {
+  background-color: #c01104;
+  color: white;
+}
+.delete-user-modal > .modal-buttons > form > .delete-button:hover {
+  background-color: #a70d02;
+}
+
+.edit-user-modal {
+  gap: 2em;
+}
+.edit-user-modal > .main-edit-content {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  gap: 1em;
+}
+.edit-user-modal > .main-edit-content > .image-username {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+.edit-user-modal > .main-edit-content > .image-username .user-photo {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.edit-user-modal > .main-edit-content > .image-username .username {
+  color: rgba(54, 60, 76, 0.7803921569);
+}
+.edit-user-modal > .main-edit-content > .edit-user-form > input,
+.edit-user-modal > .main-edit-content > .edit-user-form > select {
+  margin-bottom: 1em;
+}
+
+.add-new-department-modal > h1 {
+  margin-bottom: 1em;
+}/*# sourceMappingURL=modal.css.map */

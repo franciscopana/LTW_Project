@@ -1,0 +1,54 @@
+.label-status-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 1em;
+  padding: 1em 0em;
+}
+
+h2 {
+  padding: 1em 0em;
+}
+
+.tag {
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  color: #535353;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.tag:hover {
+  filter: brightness(90%);
+}
+
+.status-list, .label-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1em;
+  align-items: center;
+  justify-content: start;
+  align-content: center;
+  background-color: rgba(202, 207, 218, 0.2352941176);
+}
+
+.make-new-modal .preview {
+  margin: 1rem 0rem;
+}
+.make-new-modal .label-status-name {
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+  color: rgba(54, 60, 76, 0.7803921569);
+  font-weight: bold;
+}
+.make-new-modal .delete-button {
+  background-color: #c01104;
+  color: white;
+}
+.make-new-modal .delete-button:hover {
+  background-color: #a70d02;
+}/*# sourceMappingURL=label-status.css.map */

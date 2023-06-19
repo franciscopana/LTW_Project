@@ -1,0 +1,26 @@
+.ticket-card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 0.2rem 5px 5px rgba(0, 0, 0, 0.2);
+  margin: 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  cursor: pointer;
+}
+.ticket-card h4 {
+  font-size: small;
+}
+.ticket-card p {
+  margin: 0.2rem 0 1rem 0;
+}
+.ticket-card footer {
+  grid-column: 1/-1;
+}
+.ticket-card .tag {
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  color: #535353;
+}/*# sourceMappingURL=ticket-card.css.map */

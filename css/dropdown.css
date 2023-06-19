@@ -1,0 +1,26 @@
+.dropdown-content {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  border-radius: 8px;
+  margin: 0.5em 0em;
+  min-width: 160px;
+  right: 0;
+  padding: 0.5rem 0;
+}
+.dropdown-content h3 {
+  padding: 0.5rem;
+}
+
+.dropdown-hover {
+  padding: 0.5em 0em;
+  position: relative;
+}
+
+.dropdown-hover:hover {
+  background-color: rgba(202, 207, 218, 0.2352941176);
+  border-radius: 8px;
+}
+.dropdown-hover:hover .dropdown-content {
+  display: block;
+}/*# sourceMappingURL=dropdown.css.map */
